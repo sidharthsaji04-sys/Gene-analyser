@@ -28,8 +28,8 @@ def nucleotide_counter(file):
            else:
                sequence[current_gene]+=line
 
+   results={}
    for gene, seq in sequence.items():
-    results={}
     An = Tn = Cn = Gn = 0
     for se in seq:              
         if se == "A":
@@ -40,9 +40,7 @@ def nucleotide_counter(file):
             Tn += 1
         elif se == "G":
             Gn += 1
+        results[gene]=f"adenine={An}, guanine={Gn}, thymine={Tn}, cytosine={Cn}"
 
-    results['gene']=f"{gene}: adenine={An}, guanine={Gn}, thymine={Tn}, cytosine={Cn}"
-   for gene, sequ in results.items:
-      return gene and results 
-# not working , check and fix
+   return results
      
