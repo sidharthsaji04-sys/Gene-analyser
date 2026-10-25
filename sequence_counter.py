@@ -40,7 +40,7 @@ def nucleotide_counter(file):
             Tn += 1
         elif se == "G":
             Gn += 1
-        results[gene]=f"adenine={An}, guanine={Gn}, thymine={Tn}, cytosine={Cn}"
+        results[gene]={'A':An,'C':Cn,'G':Gn,'T':Tn}
 
    return results
      
