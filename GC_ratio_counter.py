@@ -17,4 +17,3 @@ def count(file):
       GC_content=round((Gn+Cn)/total_sum*100)
       GC_values[gene]=GC_content
       print (f'{gene}, GC content- {GC_content}%')
-
