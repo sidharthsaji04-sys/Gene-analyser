@@ -1,0 +1,26 @@
+# DNA Sequence Analysis 🧬
+
+A  Python project that analyses DNA sequences from a FASTA file to calculate nucleotide counts, gene lengths, and GC content.
+
+## Features
+
+* **Gene Length:** Calculates the total number of nucleotides in each gene.
+* **Nucleotide Counter:** Counts the occurrences of adenine (A), thymine (T), guanine (G), and cytosine (C).
+* **GC Content:** Calculates the percentage of guanine and cytosine in each gene.
+
+## Technologies Used
+
+* Python
+* File handling
+* Dictionaries and loops
+
+## Project Structure
+
+```text
+DNA_Analysis/
+├── main.py
+├── sequence_counter.py
+├── GC_ratio_counter.py
+└── gene sequences.txt
+
+Purpose: A personal learning project exploring the intersection of Python programming and bioinformatics.
