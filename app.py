@@ -58,8 +58,10 @@ if up_file is not None:
                 st.caption("Guanine-cytosine ratio by gene")
                 if st.button("GC count", key="gc_count", use_container_width=True):
                     Gc = gc.GC_count(file_path)
-                    st.write(Gc)
-
+                    for gene, ratio in Gc.items():
+                        resultss=f'{gene}-{ratio}%'
+                        st.write(resultss)
+                        
     except Exception as e:
         st.warning(f"File is not processing: {e}")
 
