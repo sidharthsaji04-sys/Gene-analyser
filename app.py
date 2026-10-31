@@ -61,7 +61,7 @@ if up_file is not None:
                     for gene, ratio in Gc.items():
                         resultss=f'{gene}-{ratio}%'
                         st.write(resultss)
-                        
+
     except Exception as e:
         st.warning(f"File is not processing: {e}")
 
@@ -71,7 +71,5 @@ if up_file is not None:
 st.divider()
 st.caption("1% Biotech • Gene sequence analysis")
 with st.expander('About the builder'):
-    st.write('High school student' \
-    'Coding since 2025' \
-    'Curiosity seeker')
+    st.write('High school student Coding since 2025 Curiosity seeker')
 st.link_button('To contact,click','https://www.instagram.com/_sidharthh__._/?__pwa=1#')
